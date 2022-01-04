@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>C2 Electronics</title>
+    <meta content="primary - responsive and retina ready template" name="description">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <link href="assets/images/favicon.ico" rel="shortcut icon"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-precomposed.png" />
+    <!-- JS FILES -->
+    <script type="text/javascript" src="../assets/js/jquery-1.20.2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
+    <!-- CSS FILES -->
+    <link href="../assets/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/cubeportfolio-3.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header>
+        <div class="page_head">
+            <div id="nav-container" class="nav-container" style="height: auto;">
+                <nav role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-left">
+                                <div class="logo">
+                                    <a href="../index.html">
+                                      <h3 class="Logo-title">C2 Electronics</h3>
+                                      <p>by Safdar Ulde</p>
+                                    </a>
+                                </div>
+                            </div>
+  
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 pull-right">
+                              <div class="menu dankovteam-menu-wrapper">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                              <div class="navbar-collapse collapse">
+                                <div class="menu-main-menu-container">
+                                 
+                                  <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../analogMain.html">Analog C23</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="../Analog Electronics/chapter-one.html">Chapter 1</a></li>
+                                            <li><a href="../Analog Electronics/chapter-two.html">Chapter 2</a></li>
+                                            <li><a href="../Analog Electronics/chapter-three.html">Chapter 3</a></li>
+                                            <li><a href="../Analog Electronics/chapter-four.html">Chapter 4</a></li>
+                                            <li><a href="../Analog Electronics/chapter-five.html">Chapter 5</a></li>
+                                            <li><a href="../Analog Electronics/chapter-six.html">Chapter 6</a></li>
+                                          </ul>
+                                    </li>
+                                    <li class="current-menu-item"><a href="../digitalMain.html">Digital C24</a>
+                                     <ul class="sub-menu">
+                                        <li><a href="../Digital Electronics/chapter-one.html">Chapter 1</a></li>
+                                        <li><a href="../Digital Electronics/chapter-two.html">Chapter 2</a></li>
+                                        <li><a href="../Digital Electronics/chapter-three.html">Chapter 3</a></li>
+                                        <li><a href="../Digital Electronics/chapter-four.html">Chapter 4</a></li>
+                                        <li><a href="../Digital Electronics/chapter-five.html">Chapter 5</a></li>
+                                        <li><a href="../Digital Electronics/chapter-six.html">Chapter 6</a></li> 
+                                        <li><a href="../Digital Electronics/chapter-seven.html">Chapter 7</a></li> 
+                                      </ul>
+                                    </li>
+                                    <li><a href="videos.html">Video Lectures</a></li>
+                                    <li><a href="contacts.html">Contact Info</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+      </header>
+
+      <div class="container-fluid intropagename">
+        <div class="page-in-name"><h1>Analog Electronics</h1></div>
+        <div class="page-in-bread"><span>You are here: </span><a href="../index.html" title="Home Page">Home </a> > <a href="../analogMain.html"> Analog Electronics </a> > Chapter 4</div>
+      </div>  
+
+      <div class="container head-topic"><h2>Chapter 4: Operational Amplifier</h2></div>
+
+
+      <div class="container-fluid marg20">
+        <div class="row tabs-layout">
+        <ul class="nav nav-pills nav-justified form-tabs hidden-xs col-lg-4">
+           <li class="tab-selector active"><a href="#tab1" data-toggle="tab">NEED OF OPAMP</a></li>
+           <li class="tab-selector"><a href="#tab2" data-toggle="tab">BLOCK DIAGRAM</a></li>
+           <li class="tab-selector"><a href="#tab3" data-toggle="tab">PARAMETERS / CHARACTERISTICS</a></li>
+           <li class="tab-selector"><a href="#tab4" data-toggle="tab">SPECIFICATION</a></li>
+           <li class="tab-selector"><a href="#tab5" data-toggle="tab">IDEAL CHARACTERISTICS</a></li>
+           <li class="tab-selector"><a href="#tab6" data-toggle="tab">LINEAR APPLICATION</a></li>
+           <li class="tab-selector"><a href="#tab7" data-toggle="tab">AS A SUBTRACTOR</a></li>
+           <li class="tab-selector"><a href="#tab8" data-toggle="tab">AS AN INTEGRATOR</a></li>
+           <li class="tab-selector"><a href="#tab9" data-toggle="tab">DIFFERENTIATOR</a></li>
+           <li class="tab-selector"><a href="#tab10" data-toggle="tab">INTEGRATOR</a></li>
+           <li class="tab-selector"><a href="#tab11" data-toggle="tab">IMPORATANT QUESTIONS</a></li>
+
+        </ul>
+
+
+        <select class="mb10 form-control visible-xs" id="tab_selector">
+            <option value="0">Need of an Operational Apmlifier</option>
+            <option value="1">Block Biagrams</option>
+            <option value="2">Parameters/Characteristics</option>
+            <option value="3">Specifications</option>
+            <option value="4">Ideal Characteristics</option>
+            <option value="5">Linear Applications</option>
+            <option value="6">As a Subtractor</option>
+            <option value="7">As an Integrator</option>
+            <option value="8">Differentiator</option>
+            <option value="9">Integrator</option>
+            <option value="10">Important Questions</option>
+          </select>
+
+
+            <!-- topic one -->
+        <div class="tab-content col-lg-8" id="content-tabsid">
+           <div class="tab-pane active" id="tab1">
+            <p>The invention of Transistor in 1947 revolutionized the world of electronics and became the basic building block upon which Modern computer technology rests. It is used as a fast Switch, as an Amplifier, in Oscillator and in a huge variety of applications. It is prevalent is the transceiver. The transceiver used in communication to transmits and receives radio signals for various applications. Cellular phones would be one of the most widely used applications. The tiny radio waves that induce electrical signals at the cellular phone receiver are extremely small in most cases. These signals are processed and amplified by transistor circuits. So, every cell phone uses transistor amplifiers. Other uses would include radio receivers (AM/FM), home audio receivers, cable television, satellite television, audio amplifiers etc.</p>
+            <img  src="../assets/img/op-amp-t1.png" alt="transistors">
+            <img  src="../Analog Electronics/chapter4/chap4img2.png" alt="transistors">
+           <h3>But the Multistage amplifier using transistors can’t be used in field like medical electronics, instrumentation </h3>
+             <p>Multistage Transistor amplifier is not at all suitable in medical electronics. It is impossible to amplify signals received from human nerves, muscles without OpAmp. </p>
+             <p>In medicine, bio signals are measured as a voltage generated by nerves and muscles. The measurements involve voltages at very low levels, typically ranging between 1 µV and 100 mV, with high source impedances and superimposed high-level interference signals and noise.</p>
+             <p>This is when <b>OpAmp</b> come into play – The signals are very small so they need to be amplified to make them compatible with electronic devices (displays, recorders, or A/D converters). These signals can’t be amplified faithfully with cascaded amplifiers using transistors. Noise picked up by transistor amplifier has higher value than volt signal picked up from nerves and muscles. Differential amplifier in OpAmp separate the signal and interferences, remove noise and amplify faithfully.</p>
+             <p>Op-Amp invented in 1967, are found in many devices including the medical ones such as ultrasound imaging, ECG and others.</p>
+             <p>An instrumentation amplifier (also known as an “In amp”) also require Differential amplifier which is incorporated in Op-Amp. It measures small signals in the presence of a noisy environment. The noise generally is common-mode noise, so while the signal is differential, an in amp uses its common-mode rejection (CMR) to distinguish the signal of interest from the noise.</p>         
+           </div>
+
+           <!-- topic 2 -->
+           <div class="tab-pane" id="tab2">
+            <h3>a) Simple Block Diagram</h3>
+            <img  src="../Analog Electronics/chapter4/chap4img3.png" alt="transistors">
+            <h3>b) Block Diagram with More Details</h3>
+            <img  src="../Analog Electronics/chapter4/chap4img5.png" alt="transistors">
+            <p>OPAMP is basically a differential amp i.e., it will amplify the voltage which is differentially present between its two i/p terminals. Differential amplifier is the basic building block of an OpAmp.</p>
+            <p>1stBlock: The first stage is a Balanced (dual) i/p, balanced o/p differential amp. The 2 i/ps are inverting and non- inverting i/p terminals. This stage provides most of the voltage gain of the OP-AMP.</p>
+            <p>Constant current source is connected to it.
+                2nd Block: is Balanced input unbalanced output stage differential amplifier. The output of this stage is single ended and with respect to ground. It also increases gain and CMRR.
+                </p>
+            <p>3rd Block: Emitter follower (Common Collector) has very high input impedance and low output impedance which makes OpAmp an ideal amplifier. The gain is 1. Hence acts as a buffer between two stages and avoids overloading.
+                4th Block: Level- shifting stage: Due to direct coupling used between the 1st 3 stages, the i/p of level shifting stage is an amplified signal with some non – zero dc level and finally may reach applied voltage. In absence of input, the output may not be zero. Level shifting stage is used to bring dc level to zero volts with respect to gnd.
+                </p>
+            <p> Because of direct coupling D.C voltage (0 Hz or low frequencies) is not blocked by OpAmp.</p>
+            <p>5th Block: Output stage: This stage is normally a complementary symmetrical push pull power Amplifier. It increases the magnitude of voltage and raises the current supplying capability of OP-AMP. It also ensures that the o/p impedance of OPAMP is low so that sufficient current to the load without distortion and large output voltage without distortion is possible.</p>
+            <p>Constant current source is one more block which make sure that constant current is flowing through Common Emitter resistor of first Differential amplifier. </p>
+            <h3>Functions of different block of OpAmp </h3>
+            
+            <h4>1st Stage</h4>
+            <ul>
+                <li>Increases the CMRR.</li>
+                <li>Provides High Voltage gain</li>
+                <li>Provides the input impedance very high.</li>
+                <li>Reduce the noise at the output</li>
+                <li>Helps to reduce drift i.e., change in output due to changes in temperature, supply voltage and ageing.</li>
+            </ul>
+        
+            <h4>2nd Stage</h4>
+            <ul>
+                <li>It further Increases the CMRR</li>
+                <li>Adjust the half gain of 1st Stage.</li>
+                <li>Error voltage is cancelled in this stage.</li>
+            </ul>
+        
+            <h4>3rd Stage</h4>
+            <ul>
+                <li>Consisting of current amplifiers as emitter followers</li>
+                <li>Acting as a buffer between two stages.</li>
+                <li>Avoid Overloading.</li>
+            </ul>
+        
+            <h4>4th Stage</h4>
+            <ul>
+                <li>Suppress the dc level downward to zero volt with respect to ground</li>
+                <li>Minimizes the error by suppressing dc level to ground.</li>
+            </ul>
+        
+            <h4>5th Stage</h4>
+            <ul>
+                <li>This stage increases the output voltage swing and the current in supplying capability of the amplifiers.</li>
+                <li>Provides low output impedance.</li>
+            </ul>
+        
+            <h4>Acronym type of Mnemonics to remember </h4>
+            <p>Blocks of OpAmp Block diagram</p>
+            <ul>
+                <li>A A E L O  = A square E L O  ( A for Amplifier) 
+                    = ये ~ ~ लो [ Take this]</li>
+                <li>BI - UBO - ELO</li>
+            </ul>
+           </div>
+
+
+           <!-- topic 3 -->
+           <div class="tab-pane" id="tab3">
+            <p>The electrical parameter / specifications for the 741 IC is provided in 2 modes. One mode is applicable for the normal operation of the IC at room temperature of 25°C. The other mode is applicable for a commercial temperature range from 0°C to +70°C. We will be discussing all these parameters at normal temperature mode and at supply voltages of +VCC = +15V and -VEE = -15V.  It is possible to operate the 741 on a single rail supply also.</p>
+            <ul>
+                <li>
+                  Input <b>Offset Voltage</b>
+                  <p>When both the inputs of OpAmp are grounded, the output must be zero.</p>
+                  <p>When both the inputs of OpAmp are grounded, the output must be zero.
+                      Input offset voltage is the voltage that is applied between the two input terminals of the op-amp to null the output. It is always better to have smaller values of input offset voltage and this indicates that the input terminal are matched better. Lowest values are 15uV for an ideal precision op-amp and the maximum value is 6 mV dc.
+                      </p>
+          
+                </li>
+          
+                <li>
+                  Output offset voltage is the dc voltage between two output terminals (or the output terminal and ground for circuits with one output) when the input terminal(s) are grounded.
+                </li>
+          
+                <li>
+                  Input Offset Current
+                  <p>Input Offset Current is the algebraic difference between the currents into the inverting and non-inverting terminals.                                                                                              
+                      <br>Input Offset Current, Ios = |IB+| – | IB-|</p>
+                  <p>IB+ = Non-inverting input current</p>
+                  <p>IB- = Inverting input current</p>
+                  <p>The maximum input offset current value for 741 IC is 200nA.  This value decreases as the matching between the two input terminals is improved and may reduce down to almost 6nA.</p>
+          
+                </li>
+            
+            <li>
+              Input Bias Current
+              <p>Input bias current is the average value of the inverting and non-inverting current.</p>
+              <p>Input Bias Current, IB= (IB1+ + IB-)/2</p>
+              <p>Ideally both input currents must be zero. Since no two transistors can be identical in parameters, IB1 & IB2 are not equal.
+                  <br>Typical value is 80 nA.  Maximum input bias current is 500nA and minimum value is ±7nA.      
+                  </p>
+            </li>
+          
+            <li>
+              Slew Rate (SR)
+              <p>Slew Rate is one of the most important parameters for selecting op-amps for high frequencies. SR is the maximum rate of change of output voltage per unit of time and is expressed in volts per microseconds.</p>
+              <p>Slew Rate, SR = dVo/dt  <b><i>Slew rate ensures the circuit accommodates fast output rises & reduces distortion.</i></b></p>
+              <p>By calculating slew rate, we can easily find out the rate in which the output of the op-amp changes in response to changes in the input frequency. The slew rate changes with change in voltage gain and is usually specified at unity gain. The slew rate of an op-amp is always fixed. Hence, if the slope requirements of the output signals are greater than the slew rate, then distortion occurs.  In the case of the 741 IC the slew rate is 0.5V/uS, which is very small. This is one reason why the 741 IC is considered not suitable for high frequency applications, such as oscillators, comparators, and filters.</p>
+              <img src="../Analog Electronics/chapter4/chap4img6.png">
+              <p>A typical general-purpose device may have a slew rate of 10 V / microsecond. This means that when a large step change is placed on the input, the electronic device would be able to provide an output 10-volt change in one microsecond.</p>
+          </li>
+          
+          <li>
+              Common Mode Rejection Ratio (CMRR)
+          <p>CMRR is the ratio of the differential voltage gain to the common mode voltage gain.
+             <br> CMRR = Differential Voltage Gain (Ad)/ Common Mode Voltage Gain (Acm)
+             <br> If the value of CMRR is high, there is better matching between the 2 input terminals. For 741 IC, CMRR is 90dB. High CMRR helps to reject common mode signal such as noise.
+              </p>
+          </li>
+          
+          <li>
+              Supply Voltage Rejection Ratio (SVRR)
+              <p>The change in the op-amp’s offset voltage caused by variations in supply voltage is called SVRR. The change in supply voltage can be denoted by dV and the corresponding change in input offset voltage can be denoted by dVio.
+                 <br><br> SVRR = Change in input offset voltage (dVio) / Change in supply voltage (dV)
+                 <br><br>For 741 IC, SVRR = 150uV/V.
+                 <br><br>The lower the value of SVRR, the better will be the op-amp performance.
+                  </p>
+          </li>
+          
+          <li>
+              Output Voltage Swing
+              <p>The output voltage swing of the 741 IC is a 26-volt peak-to-peak undisturbed as sine wave for ac input signals (that is a value between +13V and -13V), for a load resistance value greater than or equal to 2kilo ohms. This range shows the values of positive and negative saturation voltages of op-amp. The op-amp voltage swing value will not be greater than the supply voltage +VCC and -VEE.</p>
+          
+          </li>
+          
+          <li>
+              Op-Amp Bandwidth, Gain Bandwidth Product & Frequency Response
+              <p>The bandwidth of any circuit is of paramount importance that needs to be considered during the electronic circuit design process.
+                  <br><br> When designing the electronic circuit, it will be seen that the bandwidth of the circuit is related to the gain. Too much gain and the bandwidth will be low, less gain and the bandwidth that can be achieved is much higher.
+                  <br><br> As any op amp has limited bandwidth, it is necessary to carefully consider the gain, bandwidth, and frequency response at the outset of the design of any circuit.
+                  <br><br> Operational amplifiers themselves when operating in open loop mode only have a very limited bandwidth before the gain starts to fall. However, by using negative feedback, the huge gain of the amplifier can be used to ensure that a flat response with sufficient bandwidth is available.
+                  </p>
+                  <h5>Op-amp Bandwidth</h5>
+                  <p>Although op amps have a very high gain, this level of gain starts to fall at a low frequency. The open loop breakpoint, i.e., the frequency at which the gain has fallen by 3 dB is often only a few Hz.
+                      <br><br>741 op amp has an open loop breakpoint around 6Hz. Beyond this the response falls at a rate of -6dB/octave or -20dB/decade. 
+                      <br><br>Note: an octave is a doubling in frequency, and a decade is a ten-fold increase in frequency and therefore these two figures are two ways of expressing the same characteristic.
+                      <br><br>By adopting the correct approach during the electronic circuit design, the flat bandwidth of the complete circuit, i.e., the op amp and the additional electronic components can be made to be very flat over the required bandwidth.                                                                                                                                     
+                     <br><br> Effect of feedback on Op-amp Bandwidth- When designing a real circuit using an op amp, negative feedback is used to give controlled levels of gain. Applying this feedback enables the very high gain to be traded for bandwidth. In this way, very flat frequency response curves can be achieved within the required bandwidth.
+                     </p>
+                     <img src="../Analog Electronics/chapter4/chap4img7.png">
+                     <p><b><u>Figure:  Open loop, Closed feedback Loop Op- amp gain and frequency response.</u></b></p>
+                     <h5>Op-amp Gain Bandwidth product</h5>
+                     <p>When designing an op amp circuit, a figure known as the op amp gain bandwidth product is important.
+                      <br><br> The op amp gain bandwidth product is generally specified for a particular op amp type an open loop configuration and the output loaded: 
+                      </p>
+                      <p><b>GBP=Av x fGBP= Av x f  [f = cut off frequency (Hz)]</b></p>
+                      <p>The op amp gain bandwidth product is constant for voltage-feedback amplifiers. However, it is not applicable for current feedback amplifiers because relationship between gain and bandwidth is not linear. Therefore, decreasing the gain by a factor of ten will increase the bandwidth by the same factor.</p>
+                      <p>What is the unity gain frequency of an amplifier?
+                      <br>If the GBWP of an operational amplifier is 1 MHz, it means that the gain of the device falls to unity at 1 MHz. Hence, when the device is wired for unity gain, it will work up to 1 MHz (GBWP = gain × bandwidth, therefore if BW = 1 MHz, then gain = 1) without excessively distorting the signal.</p>
+                      <p>The gain-bandwidth product (GBW) is calculated by multiplying the absolute value of the gain with ω. which shows that the gain-bandwidth product is a constant, because it is a product between two constants: the op amp open-loop gain and the corner frequency.</p>
+          </li>
+          
+          <li>
+              Open-loop and closed-loop gains of an Op-amp
+              <p>Op-amps have a high gain (around 105, or 100 dB). To achieve stable　operation, op-amps are used with negative feedback. The gain of an op-amp without feedback is called the <b>open-loop gain </b>whereas the gain of an op-amp with a feedback circuit is called the <b>closed-loop gain</b>.</p>
+              <img src="../Analog Electronics/chapter4/chap4img8.png">
+          </li>
+              </ul>
+          </div>
+
+
+             <!-- topic 4 -->
+
+           <div class="tab-pane" id="tab4">
+            <p>The following are the basic specifications of IC 741:</p>
+            <ul>
+                <li>Supply Voltage: Requires a minimum voltage of 5V and can withstand up to +/- 18V</li>
+                <li>Input Impedance: About 2 Mega Ohms</li>
+                <li>Output impedance: About 75 Ohms</li>
+                <li>Input bias current: 80 nA</li>
+                <li>Voltage Gain: 200,000 for low frequencies</li>
+                <li>Maximum Output Current: 20 mA</li>
+                <li>Input Offset voltage: Ranges between 2mV and 6mV</li>
+                <li>Slew Rate: 0.5V/microsecond </li>
+                <li>CMRR:  90 dB		</li>
+                <li>Unity gain frequency: 1MHz</li>
+            </ul>
+          </div>
+
+
+           <!-- topic 5 -->
+
+           <div class="tab-pane" id="tab5">
+            <p>Ideal values are either zero or infinite.</p>
+            <p>Practical values are between 0 and infinite.</p>
+            <ul>
+                <h4>Characteristics of Ideal OpAmp (Infinity Values)</h4>
+                <li>Infinity common-mode rejection ratio so that the output common-mode noise voltage is zero.</li>
+                <li>Infinity slew rate so that output voltage changes occur simultaneously with input voltage changes.</li>
+                <li>Infinity input impedance Zi.  so that almost any signal source can be drive it and there is no loading of the preceding stage.</li>
+                <li>Infinity bandwidth so that any frequency signal from 0 to ∞ Hz can be amplified without attenuation.</li>
+                <li>Infinite Open loop Voltage Gain A0.</li>
+            </ul>
+        
+            <ul>
+                <h4>Characteristics of Ideal OpAmp (Zero Values)</h4>
+                <li>Zero output impedance Zo. so that the output can be drive an infinity number of other devices.</li>
+                <li>Zero Input offset voltage (Zero output voltage when input is zero.</li>
+                <li>Zero drift of characteristics with temperature.</li>
+                <li>Zero Input bias current </li>
+                <li>Zero Input offset current </li>
+                <li>Zero Response time </li>
+                <li>Perfect Balance, i.e., the differential voltage in inverting and non-inverting terminals be zero.</li>
+            </ul>
+            <p>Ridiculous and Acronym type Mnemonics to remember ideal characteristics of Op-Amp.</p>
+            <ul>
+                <p>Imagine CM running in big Bag.</p>
+                <li>For infinite Values:</li>
+                <ul>
+                    <li>CM Running Slow in BaG for Infinite time.</li>
+                    <li>CMRR Slew Bandwidth Impedance G</li>
+                    <li>  1      2   3          4          5	</li>
+                </ul>
+                <li>Remaining parameters have Zero values.</li>
+            </ul>
+
+            <img src="../Analog Electronics/chapter4/chap4img9.png">
+           </div>
+
+             <!-- topic 6 -->
+
+             <div class="tab-pane" id="tab6">
+              <ul>
+                <li><h2>Inverting Amplifier</h2>
+                <ul>
+                    <li>
+                        Consider input Loop
+                        <p>It is closed path consisting Applied Voltage source Vin, Resistor R1 and Current Iin.</p>
+                        <p>Inverting input, Point A, is at ground. (Virtual ground concept)</p>
+                        <p>I = V/ R.- - - According to Ohm's Law. 
+                            <br>I = Difference of Potential across R / Resistance 
+                            <br>Iin = (Vin – Va) /R1
+                            </p>
+                            <p><b>Iin = Vin / R1    since Va = 0       equation  1</b></p>
+                            <p>Now <span style="font-weight: 400;"> feedback path Loop.</span></p>
+                            <p>It is closed path consisting Output Voltage Vo, Resistor R2 and Current If.</p>
+                            <p>Inverting input at Zero potential.( Since Virtual ground.)
+                                <br>Io = (Va-Vo) /R2
+                                </p>
+                                <p> <b> Io = - Vo/ R2    since Va = 0       eqn 2 </b> (According to Ohm law)</p>
+                                <p>From KCL, Sum of currents at any node/Junction is Zero.</p>
+                                <p>At point A, <b>Iin - If – Ia = 0</b> (Since Incoming current is positive, Outgoing current Negative.)</p>
+                                <p>Current Ia in inverting  terminal is Zero (Since input impedance of Op-Amp is infinite)</p>
+                                <p>Iin – If – Ia = 0
+                                   <br> Iin – If = 0
+                                    </p>
+                            <p><b>Iin = If    -  - -- --  KCL eqn at point A</b></p>
+                            <p>    Substitute Iin and If in above equation. (Equations 1 & 2)</p>
+                            <p><b>
+        
+                                Vin / R1   = - Vo/R2
+                            <br>Since we want to find Voltage gain Av and it is ratio of output voltage and input voltage.
+                            <br>Voltage gain Av = Output Voltage/ Input voltage
+                            <br>Av = Vo/Vin  = -  R2/ R1 
+        
+                            </b></p>
+                            <p><b>And Output voltage </b></p>
+                            <p><b>V0 = Vin (-  R2/ R1) = - R2/R1 Vin 
+                           </b></p>
+                           <p>From above equation we see that unlike in Transistor, in Op-Amp voltage gain is decided by external resistances.</p>
+                           <p>We can change gain very easily just by changing Resistor(s).</p>
+                           <p>e.g for gain 10 if R = 10 K , Ri = 1K	</p>
+                           <p>for gain 5 , if R = 10 K , Ri = 2 K	</p>
+                           <img src="../Analog Electronics/chapter4/chap4img15.png" alt="#">
+                    </li>
+        
+                    <li>
+                        Consider input Loop 1
+                        <p>It is closed path consisting Voltage source Vin, Resistor Rin and Current Iin.
+                            Inverting input, Point A, is at voltage Vin (Since infinite gain, same as Virtual ground concept in Inv. Amplifier)
+                            </p>
+                            <p>I = V/ R.- - - According to Ohm's Law. </p>
+                            <p>Iin = Difference of Potential across Rin /  Rin</p>
+                            <p>Iin = (Vin – 0) / Rin</p>
+                            <p><b>Iin = Vin / Rin          equation  1</b></p>
+                            <p>Now<span style="font-weight: 500;"> Consider feedback path Loop 2</span></p>
+                            <p>It is closed path consisting Output Voltage Vo, Resistor Rf and Current If.
+                                Inverting input at Voltage Vin . ( Since infinite gain, same as Virtual ground concept in Inv. Amplifier)
+                                </p>
+                                <p>If = (Vo - Vin) /Rf</p>
+                                <p><b>If = (Vo -Vin) /Rf    since VA = VB      eqn 2 </b>(According to Ohm law)</p>
+                                <p>From KCL, Sum of currents at any node/Junction is Zero.</p>
+                                <p>At point A,<b> - Iin + If - Ia = 0 </b>(Since Incoming current is positive, Outgoing current Negative.)</p>
+                                <p>Current Ia in inverting  terminal is Zero (Since input impedance of Op-Amp is infinite)</p>
+                                <ul>
+                                    <li>Iin + If – Ia = 0. (Note Minus sign before Iin.)</li>
+                                    <li>Iin + If = 0</li>
+                                </ul>
+        
+                                <p><b>Iin = If    -  - -- --  KCL eqn at point A	</b></p>
+                                <p>    Substitute Iin and If in above equation. (Equations 1 & 2)</p>
+                                <p><b>
+                                    Vin / Rin   = (Vo – Vin) / Rf
+                                  <br>Since we want to find Voltage gain Av and it is ratio of output voltage and input voltage.
+                                  <br>Voltage gain Av = Output Voltage/ Input voltage
+                                  <br>Av = (Vo – Vin) /Vin  = Rf/ Rin 
+                                      <br>  = Vo/Vin – Vin / Vin  = Rf/ Rin
+                                        <br>= Vo / Vin – 1 = Rf / Rin
+                                  <br>Av = Vo / Vin  = 1 + Rf / Rin
+                                  <br>
+                                  And Output voltage 
+                                  <br>V0 = Vin (1 + Rf / Rin)
+                                </b></p>
+                                  <p>We can change gain very easily just by changing Resistor(s).	</p>
+                                  <p>e.g for gain 11 if Rf = 10 K , Ri = 1K	</p>
+                                  <p>for gain 6 , if Rf = 10 K , Ri = 2 K.</p>
+                                  <img src="../Analog Electronics/chapter4/chap4img16.png" alt="#">
+                            </li>
+                </ul>
+                </li>
+        
+                <li>
+                    <h2>Inverting Adder</h2>
+                    <p><b> Note : Before proceeding to derivation please see Inverting amplifier derivation for details.</b></p>
+                    <img src="../Analog Electronics/chapter4/chap4img17.png" alt="#">
+                    <p>Consider input Loops</p>
+                    <p>It is 3 closed paths consisting 3 Applied Voltage sources V1, V2 & V3, 3 Resistors R1,R2,R3 and 3 Current I1, I2, I3.</p>
+                    <p>Sum of these currents = Iin = I1 + I2 + I3 = (V1/ R1) + (V2/R2) + (V3/ R3)</p>
+                    <p>Inverting input, Point A, is at ground. (Infinite impedance; Virtual ground concept)</p>
+                    <p>I = V/ R.- - -  According to Ohm's Law. </p>
+                    <p>I = Difference of Potential across Resistor / Resistance </p>
+                    <p>Iin = (Vin – Va) /R1</p>
+                    <p><b>Iin = Vin / Ri    since Va = 0      </b></p>
+                    <p>(V1/ R1) + (V2/R2) + (V3/ R3) = Vin / Ri       <b>   equation  1</b></p>
+                    <p>Now <span style="font-weight: 500;">Consider feedback path Loop.</span></p>
+                    <p>It is closed path consisting Output Voltage Vo, Resistor Rf and Current If.</p>
+                    <p>Inverting input at Zero potential.( Since Virtual ground.)</p>
+                    <p>If = (Va-Vo) /R2	</p>
+                    <p><b>If = - Vo/ Rf    since Va = 0       eqn 2</b> (According to Ohm law)</p>
+                    <p>From KCL, Sum of currents at any node/Junction is Zero.</p>
+                    <p>At point A, <b>Iin - If – Ia = 0</b> (Since Incoming current is positive, Outgoing current Negative.)</p>
+                    <p>Current Ia in inverting  terminal is Zero (Since input impedance of Op-Amp is infinite)</p>
+                    <p>Iin – If – Ia = 0</p>
+                    <p>Iin – If = 0</p>
+                    <p><b>Iin = If    -  - -- --  KCL eqn at point A</b></p>
+                    <p>    Substitute Iin and If in above equation. (Equations 1 & 2)</p>
+                    <p><b>
+                        Vin / Rin   =  - Vo/Rf	
+                        <br>Vo/Rf = - (V1/ R1) + (V2/R2) + (V3/ R3)
+                        <br>Vo = -Rf (V1/ R1) + (V2/R2) + (V3/ R3)
+                        <br>II   R1 = R2 = R3 = Rin
+                        <br>Vo = -Rf/Rin (V1 ) + (V2) + (V3)
+                        <br>If Rf = Rin	
+                        <br>Vo = - (V1 + V2 + V3)
+                        <br><br>Output Voltage = Sum of 3 input Voltages.
+                        <br>Minus sign is because of Inverting mode of OP-AMP.
+                    </b></p>
+                    </li>
+            </ul>
+            </div>
+
+
+
+           <!-- topic 7 -->
+
+           <div class="tab-pane" id="tab7">
+            <p><b><span style="background-color: greenyellow; padding: 3px;">A difference amplifier or OpAmp subtractor amplifies the difference between two input signals and rejects any signals common to both inputs. 
+              <br>If Gain is 1 then it acts as a Subtractor.
+              </span></b></p>
+              <img src="../Analog Electronics/chapter4/chap4img18.png" alt="#">
+              <p>Above is OpAmp subtractor circuit.</p>
+              <p>Applying Kirchhoff Current Law at node 1, and Using Ohm’s Law we get,</p>
+              <img src="../Analog Electronics/chapter4/chap4img19.png" alt="#">
+              <p>We have written this equation by assuming that there is no current entering in the inverting terminal of the op amp since input impedance Zi = Infinite 
+                  Now, by simplifying the above equation by bringing Vo on LHS, we get,
+                  </p>
+                  <img src="../Analog Electronics/chapter4/chap4img20.png" alt="#">
+                  <p>[Above got after Multiplying both sides by R2.   Vo = (V.R2/R1 ) + V – (V1.R2/R1) ]</p>
+                  <img src="../Analog Electronics/chapter4/chap4img21.png" alt="#">
+                  <p>Here we got Vo in terms of Input V1 and V. </p>
+                  <p>This V should be in terms of V2	</p>
+                  <p>Now, by applying Kirchhoff Current Law at node 2, and Using Ohm’s Law  we get,</p>
+                  <img src="../Analog Electronics/chapter4/chap4img22.png" alt="#">
+                  <p>Above got after Multiplying both sides by R3].  We know that, in ideal op amp, voltage at inverting input is same as the voltage at non inverting input. (Virtual Ground Concept) Hence we get, </p>
+                  <p><h4><b>V = V’  - ----- (a)</b></h4></p>
+                  <p><h4><b>Using equations (i) , (ii) and (a)</b></h4></p>
+                  <p>So, now from equation (i) and (ii),</p>
+                  <img src="../Analog Electronics/chapter4/chap4img23.png" alt="#">
+                  <p>[ Explanation of upper Denominator term….
+                      <br>R4/(R3+R4) = R4/R4/ (R3/R4+R4/R4) 
+                      <br>After dividing Numerator and Denominator by R4
+                      <br>= 1/(1+R3/R4) ]
+                      </p>
+                      <p>Also, Numerator 1+(R2/R1) 
+                          <br>= [(R1/R2) (1+ R2/R1)] ÷ [R1/R2] After Multiply & divide
+                          <br>By R1/R2	
+                          <br>= (R1/R2)+1 ÷ R1 / R2 
+                          <br>= R2/R1 . (1+ R1/R2)
+                          <br<img src="../Analog Electronics/chapter4/chap4img24.png" alt="#">
+                          <br>The difference amplifier rejects signal common to both inputs. That means, if polarity and magnitude of both input signals are same, the output must be zero.
+                          <br><img src="../Analog Electronics/chapter4/chap4img25.png" alt="#">
+                          <br>This condition must be satisfied only when,
+                          <br><img src="../Analog Electronics/chapter4/chap4img26.png" alt="#">
+                          <br>In that case, equation (iii) becomes,
+                          <br><img src="../Analog Electronics/chapter4/chap4img27.png" alt="#">
+                          <br>Again, if we make, R1=R2, then equation (iv) becomes,
+                          <br><img src="../Analog Electronics/chapter4/chap4img28.png" alt="#">
+                          <br>So, if R1 = R2 and also R3 = R4 then the difference amplifier becomes a perfect subtractor, which subtracts directly the input signals.
+                          <br><img src="../Analog Electronics/chapter4/chap4img29.png" alt="#">
+                          <br>Finally, the circuit of op amp substractor becomes.
+          
+                      </p>
+          </div>
+
+
+         <!-- topic 8 -->
+
+         <div class="tab-pane" id="tab8">
+          <p>The integrator with voltage gain 1 produces an output voltage that is proportional to duration of the input signal.</p>
+          <p>In inverting, non-inverting amplifier, an adder or subtractor type circuit used just pure resistances in both the input and the feedback loop.</p>
+          <p>But in Integrator in feedback path Capacitor, C non-linear passive components is used.</p>
+          <img src="../Analog Electronics/chapter4/chap4img30.png" alt="#">
+          <p>In Integrator, the magnitude of the output signal is determined by the length of time a voltage is present at its input as the current through the feedback loop charges or discharges the capacitor as the required negative feedback occurs through the capacitor.</p>
+          <p>Let us derive equation for output voltage Vo.</p>
+          <p>Note: For all inverting OP-AMP derivations we start from equation If = - Iin</p>
+          <p><b>Consider input Path </b></p>
+          <p>Using Ohms law, KCL ( Please see inverting OP-AMP derivation for more details) 
+              <br><img src="../Analog Electronics/chapter4/chap4img31.png" alt="#">
+          </p>
+          <p><b>Consider Feed back path where Capacitor is connected.</b></p>
+          <p>I = dQ / dt . From definition – Rate of flow of charge is current.
+              <br>If = dQ / dt
+              <br>And Q = CV. 
+              <br>dQ/ dt = C[ dVo/dt] , C is Capacitor value. It is constant. Since once it is placed in circuit we don’t change it.
+              <br>If = - dQ/dt   and Iin = Vin/ Rin
+              <br>C [dVo/dt ]= - Vin/ Rin
+              <br>Integrating both the sides.
+              <br>Vo = - [1/Rin.C] integral of Vin dt  ( draw symbol of integration where integral is written)
+              <br>If product Rin.C = 1 then Vo = integral of Vin. This is called passive integral.
+             <br> If Rin = 1 M Ohm and C = 1 micro farad then product RC= 1 
+      
+              </p>
+      
+              <p><u><b>Other way……....</b></u></p>
+              <img src="../Analog Electronics/chapter4/chap4img32.png" alt="#">
+              <p>From which we derive an ideal voltage output for the Op-amp Integrator as:</p>
+              <img src="../Analog Electronics/chapter4/chap4img33.png" alt="#">
+              <p>From which we derive an ideal voltage output for the Op-amp Integrator as:</p>
+              <img src="../Analog Electronics/chapter4/chap4img34.png" alt="">
+              <p>The circuit of operational amplifier integrator allows precise integration of the i/p signal to be attained. The applications of this circuit mainly include analog computers. Nowadays, an integration task is mandatory in analog applications, wherever the IC circuit is the perfect solution.</p>
+              <img src="../Analog Electronics/chapter4/chap4img35.png" alt="#">
+              <p>The op-amp differentiator has several applications of electronic circuit design. This circuit is used in analog computers where it is capable of providing a differentiation operation on the analog input voltage. This can be used in process instrumentation to check the rate of change of different points. Op-amp differentiator may be required in signal conditioning applications.
+                  Thus, from the above information finally, we can conclude that op-amp integrated circuits are linear devices which are perfect for DC amplification, and used commonly in filtering, signal conditioning, mathematical operations like integration, differentiation, etc. Here is a question for you, what are the different types of an operational amplifier?
+                  </p>
+
+                  <p><b>Op-amp Integrator Ramp Generator	</b></p>
+                  <img src="../Analog Electronics/chapter4/chap4img36.png" alt="">
+
+        </div>
+
+
+
+       <!-- topic 9 -->
+
+       <div class="tab-pane" id="tab9">
+        <p>In an op-amp differentiator circuit, the output voltage is directly proportional to the input voltage rate of change with respect to time, which means that a quick change of the input voltage signal, then the high o/p voltage will change in response. As the output of an op-amp differentiator circuit is proportional to the change in input. When the inputs of the differentiator circuit are standard waveforms like sine, square, triangular then the output waveforms will be very different.</p>
+        <img src="../Analog Electronics/chapter4/chap4img37.png" alt="#">
+        <p>If the input is square wave then there will be small spikes in other output waveforms. These spikes will be imperfect with the slope of the ends of the input waveform and maximum circuit output.</p>
+        <p>If the input is triangular waveform then the output changes to a square waveform  with the increasing and declining levels of the input waveform.</p>
+        <p>If the input is sine wave from then it is changed to a cosine waveform which gives the signal with 90° phase shift, which is very useful in some situations.</p>
+        <p><b>Operational Amplifier Differentiator Circuit</b></p>
+        <p>The operational amplifier circuit generates an output voltage which is proportional to the time derivative input voltage. So this op-amp circuit is called as the differentiator. </p>
+        <p>Assume the ground terminal which is denoted with G in the circuit, where the flow of current through the ground terminal is equivalent to the flow of current out, we can write is as</p>
+        <img src="../Analog Electronics/chapter4/chap4img38.png" alt="#">
+        <p>In the above circuit, the op-amp node voltage at inverting terminal is zero then the flow of current through the capacitor can be written as</p>
+        <h3><b>Iin = If</b></h3>
+        <p>Where <b>If = -Vout/Rf</b>
+        <br> The capacitor charge equals the voltage with capacitance times across the capacitor
+            <br><b>Q = C . Vin</b>
+                <br>Therefore the charge rate change is
+                <br><b>dQ/dt = C dVin/dt</b>
+                <br>But the dQ/dt is the current through the capacitor
+                <br><b>-Vout/Rf  = C dVin/dt</b>
+                <br>An ideal output voltage (Vout) for the operational amplifier differentiator is written as
+                <br><b>Vout = – Rf C dVin/dt</b>
+                <br>Thus, the output voltage is a constant input voltage derivative – Rf C times of the input Vin voltage with respect to time. Here sign minus (–) specifies the phase shift (180o) as the input signal is given to the input inverting terminal of the op-amp.
+                <br><img src="../Analog Electronics/chapter4/chap4img39.png" alt="#">
+            </p>
+    
+      </div>
+
+
+
+     <!-- topic 10 -->
+
+     <div class="tab-pane" id="tab10">
+      <p>In most of the operational amplifier circuits, the feedback connection which is used is because of resistive in nature by a straight resistive line outlining as a minimum portion of the network. But for the op-amp integrator, the feedback will be provided by the capacitor among the input and output of the operational amplifier.</p>
+      <img src="../Analog Electronics/chapter4/chap4img40.png" alt="#">
+      <p>As an op-amp integrator performs the function of mathematical integration. However, it can be used in analog computers. The operation of this circuit is, it generates an output which is proportional to the input voltage with time. So the output voltage will be determined with the primary output voltage at any time.</p>
+      <p>From the above waveforms, it can be observed that as the input residues at zero. but when a step i/p voltage is given to the input, then the output will be raised. Similarly, when the step input voltage comebacks to zero position, then the output residue at the voltage it last achieved.</p>
+      <p><b>Operational Amplifier Integrator Circuit</b></p>
+      <p>The operational amplifier integrator circuit can be built with an operational amplifier and a capacitor among the inverting input as well as the output, & a resistor from the inverting i/p to entire input of the circuit.</p>
+      <img src="../Analog Electronics/chapter4/chap4img41.png" alt="#">       
+      <p>One of the applications of an op-amp is an integrator; it can be formed by altering the positions of resistor and capacitor. This circuit can generate an o/p voltage which is proportional to the input voltage time integral. Thus this circuit is named as an integrator circuit. Assume the ground terminal which is denoted with G in the above circuit, where the flow of current through the ground terminal is equivalent to the flow of current out, we can write is as</p>
+      <p><b>
+          If   Iin + If = 0
+         <br> Iin = – If
+         <br> Vin –Va/R = -C d/dt (V0-Va)
+         <br> Where Va = 0
+         <br> Vin/R = -C d/dt V0
+  
+      </b>
+     <br> Integrate the above equation, we can get the following
+     <br> <b>
+          1/R
+         <br> Or
+         <br> Vout = −∫Vin/R C dt +c
+  
+      </b>
+     <br> Therefore the Vout voltage is equal to the constant -1/RC and integral of input voltage Vin
+  </p>
+    </div>
+
+
+   <!-- topic 11 -->
+
+   <div class="tab-pane" id="tab11">
+    <ul>
+      <li>Question1</li>
+      <li>question 2</li>
+      <li>question 3</li>
+    </ul>
+  </div>
+
+
+
+
+
+          </div>
+    </div>
+  </div>
+
+
+   
+
+
+
+<div class="footer">
+  <div class="copyright">Copyright © 2021 Design & Develop by 
+    <a href="http://sharjeel.epizy.com" class="sharjeelLink">Sharjeel Ak
+      </a></div>
+      </div>
+  </div>
+
+
+
+    <script type="text/javascript" src="../assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/retina.js"></script>
+    <script type="text/javascript" src="../assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sticky.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.inview.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="../assets/js/portfolio-main.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+   
+</body>
+</html> 

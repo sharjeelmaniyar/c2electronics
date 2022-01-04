@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>C2 Electronics</title>
+    <meta content="primary - responsive and retina ready template" name="description">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <link href="../assets/images/favicon.ico" rel="shortcut icon"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-precomposed.png" />
+    <!-- JS FILES -->
+    <script type="text/javascript" src="../assets/js/jquery-1.20.2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
+    <!-- CSS FILES -->
+    <link href="../assets/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/cubeportfolio-3.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../assets/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header>
+        <div class="page_head">
+            <div id="nav-container" class="nav-container" style="height: auto;">
+                <nav role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pull-left">
+                                <div class="logo">
+                                    <a href="../index.html">
+                                      <h3 class="Logo-title">C2 Electronics</h3>
+                                      <p>by Safdar Ulde</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 pull-right">
+                              <div class="menu dankovteam-menu-wrapper">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                              <div class="navbar-collapse collapse">
+                                <div class="menu-main-menu-container">
+                                 
+                                  <ul>
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../analogMain.html">Analog C23</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="../Analog Electronics/chapter-one.html">Chapter 1</a></li>
+                                            <li><a href="../Analog Electronics/chapter-two.html">Chapter 2</a></li>
+                                            <li><a href="../Analog Electronics/chapter-three.html">Chapter 3</a></li>
+                                            <li><a href="../Analog Electronics/chapter-four.html">Chapter 4</a></li>
+                                            <li><a href="../Analog Electronics/chapter-five.html">Chapter 5</a></li>
+                                            <li><a href="../Analog Electronics/chapter-six.html">Chapter 6</a></li>
+                                          </ul>
+                                    </li>
+                                    <li class="current-menu-item"><a href="../digitalMain.html">Digital C24</a>
+                                     <ul class="sub-menu">
+                                        <li><a href="chapter-one.html">Chapter 1</a></li>
+                                        <li><a href="chapter-two.html">Chapter 2</a></li>
+                                        <li><a href="chapter-three.html">Chapter 3</a></li>
+                                        <li><a href="chapter-four.html">Chapter 4</a></li>
+                                        <li><a href="chapter-five.html">Chapter 5</a></li>
+                                        <li><a href="chapter-six.html">Chapter 6</a></li> 
+                                        <li><a href="chapter-seven.html">Chapter 7</a></li> 
+                                      </ul>
+                                    </li>
+                                    <li><a href="videos.html">Video Lectures</a></li>
+                                    <li><a href="contacts.html">Contact Info</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+      </header>
+
+      <div class="container-fluid intropagename">
+        <div class="page-in-name"><h1>Digital Electronics</h1></div>
+        <div class="page-in-bread"><span>You are here: </span><a href="../index.html" title="Home Page">Home </a> > <a href="../digitalMain.html"> Digital Electronics </a> >  Chapter 1</div>
+      </div>                
+
+     
+
+      <div class="container head-topic"><h2>Chapter 4: Combinational Circuits</h2></div>
+
+
+      <div class="container-fluid marg20">
+        <div class="row tabs-layout">
+        <ul class="nav nav-pills nav-justified form-tabs hidden-xs col-lg-4">
+           <li class="tab-selector active"><a href="#tab1" data-toggle="tab">introdction</a></li>
+           <li class="tab-selector"><a href="#tab2" data-toggle="tab">Multiplexer</a></li>
+           <li class="tab-selector"><a href="#tab3" data-toggle="tab">demultiplexer</a></li>
+           <li class="tab-selector"><a href="#tab4" data-toggle="tab">encoder</a></li>
+           <li class="tab-selector"><a href="#tab5" data-toggle="tab">Decoder</a></li>
+           <li class="tab-selector"><a href="#tab6" data-toggle="tab">Questions</a></li>
+          
+        </ul>
+
+        <select class="mb10 form-control visible-xs" id="tab_selector">
+            <option value="0">introdction</option>
+            <option value="1">multiplexer</option>
+            <option value="2">demultiplexer</option>
+            <option value="3">encoder</option>
+            <option value="4">Decoder</option>
+            <option value="5">Questions</option>
+          </select>
+
+
+        <div class="tab-content col-lg-8" id="content-tabsid">
+            <!-- topic one -->
+
+           <div class="tab-pane active" id="tab1">
+            <p><b>Combinational Logic Circuits are Digital logic circuits without memory.</b></p>
+            <p><b>It’s output at any instant depends only on the combination of its present inputs. </b></p>
+            <p>Since combinational logic circuits are without memory , there is no feedback. (From output to input)</p>
+            <p>Output changes as change in input take place and delay is depend upon propagation delays of number of logic gates between input and output. </p>
+            <p><b>Note: /</b> Sequential Logic Circuits (next chapter) outputs are dependant not only on present inputs but also on their previous output state.</p>
+            <img src="./chapter4/t1-1.png" alt="">
+            <p><b><u>Adders , Subtractors which are types of Combinational circuits completed in previous chapter.</u></b></p>
+            <p><b><u> In this chapter, Data transmission, Code converter applications, Mux, Demux, Encoders and Decoders, BCD to 7 Segment display will be discuss. </u></b></p>
+            <h4>See following Classification.</h4>
+            <p>Classification of Combinational Logic Circuits</p>
+            <img src="./chapter4/t1-2.png" alt="">
+    
+
+          </div>
+
+           <!-- topic 2 -->
+           <div class="tab-pane" id="tab2">
+            <p><b><u>Multiplexers ( Mux) or Data selector ……(Many to One)</u></b></p>
+            <p><b>Multiplexers are also called as data selectors.</b></p>
+            <img src="./chapter4/t1-3.png" alt="">
+            <p><b>Above diagrams gives the idea how Mux selects input data.</b></p>
+            <p><b>Mux- Demux combination reduces wiring between inputs and outputs and reduces overall cost and make maintenance easy.</b></p>
+            <p><b>LHS circuit selects electronically and RHS manually.</b></p>
+            <p><b><u>Example of application of Mux.</u></b></p>
+            <img src="./chapter4/t1-4.png" alt="">
+            <p>Multiplexers, is an electronic device that selects between multiple analog or digital input signals and forwards it to a device on a single output line. A multiplexer of 2n inputs has  n select lines, which are used to select which input line to send to the output.. 4 input lines need 2 select lines.</p>
+            <p>In others words…..</p>
+            <p>•  Multiplexer is a combinational circuit that selects binary information from one of many inputs lines and directs it to a single output line.</p>
+            <p>•  The selection of a particular input line is controlled by a group of selection lines.</p>
+            <p>•  There are 2n input lines and n selection lines whose bit combination determine which input is to be selected.</p>
+            <p>Mux are mainly used to increase the amount of data that is sent over the network using two types, Time division mux and Frequency division mux.</p>
+            <img src="./chapter4/t1-5.png" alt="">
+            <p><b><u>See fig : The basic function of a Multiplexer:</u></b> Combining multiple inputs into a single data stream. </u></b></p>
+            <p>On the receiving side, a <b>De-multiplexer </b>splits the single data stream into the original multiple signals.</p>
+            <p>Above is time division multiplexer (TDM). In this at different times position , switch is at different locations.</p>
+            <p>4:1 high speed mux have speed about 50 Giga bits per second..</p>
+            <p>The above combination of Mux and Demux is used for economizing connections over a single channel, by connecting the multiplexer's single output to the de-multiplexer's single input. </p>
+            <p>Here you can understand how economically, efficiently 5 telephone subscribers at one location can communicate with subscribers at other location by properly connecting their addresses.</p>
+            <p>In above figure,  LHS B is communicating with RHS I person.</p>
+            <p>In following figure D is communicating with G. Since speed is very high in Giga bits / sec People can communicate with individual without any interference.</p>
+            <img src="./chapter4/t1-6.png" alt="">
+            <h4>Multiplexer Types</h4>
+            <p>•	2-1 multiplexer ( 1select line)</p>
+            <p>•	4-1 multiplexer (2 select lines)</p>
+            <p>•	8-1 multiplexer(3 select lines)</p>
+            <p>•	16-1 multiplexer (4 select lines)</p>
+            <h5><b>4 :1 Multiplexer</b></h5>
+            <p>4:1 Multiplexer has four data inputs DO, D1, D2 & D3, two selection lines s1 & s0 and one output Y. The block diagram of 4:1 Multiplexer and it’s Truth table is shown in the following figure.</p>
+            <img src="./chapter4/t2-2.png" alt="">
+            <p>One of these 4 inputs will be connected to the output based on the combination of inputs present at these two selection lines</p>
+            <p>From Truth table, we can directly write the Boolean function for output, Y as</p>
+            <p><b>Y=S1′S0′D0+S1′S0D1+S1S0′D2+S1S0D3</b></p>
+            <p>We can implement this Boolean function using 2 Inverters, 4 AND gates & 1 OR gate.</p>
+            <p> The circuit diagram of 4 : 1 multiplexer is shown in the following figure.</p>
+            <img src="./chapter4/t2-3.png" alt="">
+            <p>In explanation the working of the circuit, other definition of AND gate must be understood.</p>
+            <p>Definition of AND : For 3 inputs AND gate if 2 inputs are high then output is same as a 3rd Input of AND gate.</p>
+            <p>Hence inputs D0 will be transferred to output if select two inputs are high. Since address of D0 is 0 0  to make it 1 1 NOT gates are connected between select inputs and AND inputs.</p>
+            <p>Address of D1 is 0 1 , to make both inputs of AND high first 0 is given to NOT and second no. 1 is directly connected to AND.</p>
+            <p>Similarly for address 1 0 NOT is connected to second number</p>
+            <p>And for address 1 1 , no NOT gate is required.</p>
+            <p><b>•	NB: Above technique is used throughout this chapter.</b></p>
+            <p>Using Above ,We can easily understand the operation of the above circuit. </p>
+            <p>Similarly, we can understand 8:1 and 16:1 multiplexer by following the same procedure.</p>
+            <h5><b>8 x 1 Multiplexer </b></h5>
+            <p>In 8 x 1 Multiplexer, 8 represents number of inputs and 1 represents output line. So three (3) select lines are required to select one of the inputs.</p>
+            <img src="./chapter4/t2-4.png" alt="">
+            <p>The 8-to-1 multiplexer consists of 8 input lines, one output line and 3 selection lines.</p>
+            <p><b>8-1 Multiplexer Circuit</b></p>
+            <p>For the combination of selection input, the data line is connected to the output line. The circuit shown below is an 8 : 1 multiplexer. The 8-to-1 multiplexer requires 8 AND gates, one OR gate and 3 selection lines. As an input, the combination of selection inputs are giving to the AND gate with the corresponding input data lines.</p>
+            <p>In a similar fashion, all the AND gates are given connection. In this 8 : 1 multiplexer, for any selection line input, one AND gate gives a value of 1 and the remaining all AND gates give 0. And, finally, by using OR gate, all the AND gates are added; and, this will be equal to the selected value.</p>
+            <p><b>8-1 Multiplexer Circuit using Logic gates.</b></p>
+            <img src="./chapter4/t2-5.png" alt="">
+            <p><b>Truthtable of 8:1 Mux</b></p>
+            <img src="./chapter4/t2-6.png" alt="">
+            <h4>Applications of Multiplexers</h4>
+            <p>Multiplexers are used in various applications wherein multiple-data need to be transmitted by using single line.</p>
+            <p>•	Communication System
+              <br>A communication system has both a communication network and a transmission system. By using a multiplexer, the efficiency of the communication system can be increased by allowing the transmission of data, such as audio and video data from different channels through single lines or cables.
+            </p>
+            <p>•	Computer Memory <br>Multiplexers are used in computer memory to maintain a huge amount of memory in the computers, and also to reduce the number of copper lines required to connect the memory to other parts of the computer.</p>
+            <p>•	Telephone Network <br>In telephone networks, multiple audio signals are integrated on a single line of transmission with the help of a multiplexer.</p>
+            <p>•	Transmission from the Computer System of a Satellite <br>Multiplexer is used to transmit the data signals from the computer system of a spacecraft or a satellite to the ground system by using a GSM satellite.</p>
+            <p><b>Construction of 8:1 Mux using two 4:1 Mux and 1 OR gate.</b></p>
+            <img src="./chapter4/t3-1.png" alt="">
+            <h4><b>1 OR gate.</b></h4>
+            <p>Truth Table is same as 8:1 Mux by Logic gates.</p>
+            <p>Working of this can be explained in exam by carefully watching upper diagram and using same Truth table.</p>
+            
+
+           </div>
+
+
+           <!-- topic 3 -->
+           <div class="tab-pane" id="tab3">
+            <p>De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.</p>
+            <p>Demultiplexer is a combinational circuit that accepts multiplexed data and distributes over multiple output lines. In other words, the function of Demultiplexer is the inverse of the multiplexing operation. </p>
+            <p>Similar to Multiplexer, the output depends on the control inputs.</p>
+            <p>The control input or the ‘select’ input decides which output line is connected to the input. </p>
+            <p>Let us consider 1:4 Demultiplexer as shown in following figure below where: D is the input, S0 and S1 are the control inputs, Out0, Out 1, Out2, Out3,Out 4 are 4 output lines and the data is transmitted to one of the four outputs.</p>
+            <img src="./chapter4/t3-01.png" alt="">
+            <p> Schematic Diagram of 1:4 Demux.</p>
+            <p><b>Possible Outcomes</b></p>
+            <p>If S1S0 = 00, then D0 output of Demultiplexer receive the input data. <br>If S1S0 = 01, then output D1 receives the input data. <br>If S1S0 = 10, then input data is distributed to D2. <br>If S1S0 = 11, then output D3 receives the input data. <br>Hence, the logic equations for the outputs are: <br>D0 = S’1 S’0 D <br>D1 = S’1 S0 D <br>D2 = S1 S’ D <br>D 3= S1 S0 D</p>
+            <h4>Types of De-multiplexers</h4>
+            <p>•	1-2 De-multiplexer  (1 select line)</p>
+            <p>•	1-4 De-multiplexer  (2 select lines)</p>
+            <p>•	1-8 De-multiplexer  (3 select lines)  </p>
+            <p>•	1-16 De-multiplexer (4 select lines)</p>
+            <h5><b>1:2 De-multiplexer</b></h5>
+            <p>The 1:2 Demux consists of 1 data input, 1 control bit and 2 output bits. I0 and I1 are the two output bits, S is the control bit or the select bit and D is the input bit.</p>
+            <p>Following figure illustrates the block diagram and circuit diagram of 1:2 Demux.</p>
+            <img src="./chapter4/t3-2.png" alt="">
+            <h5><b>1:4 De-multiplexer</b></h5>
+            <p>The 1:4 Demux consists of 1 data input bit, 2 control bits and 4 output bits. “Data in”  is the input bit, D0, D1, D2, D3 are the four output bits and S0 and S1 are the control/Select bits.</p>
+            <p>Following figure  illustrates the block diagram and circuit diagram of 1:4 Demux.</p>
+            <img src="./chapter4/t3-3.png" alt="">
+            <p>Same as above but with more details….</p>
+            <img src="./chapter4/t3-4.png" alt="">
+            <h5><b>1:8 Demultiplexer</b></h5>
+            <p>The 1:8 Demux consists of 1 data input bit, 3 control bits and 8 output bits. </p>
+            <p>I0, I1, I2, I3, I¬4, I5, I6, I7   are the eight output bits, </p>
+            <p>S0, S1 and S2 are the control bits and input D.</p>
+            <p>Following Fig illustrates the block diagram and circuit diagram of 1:8 Demux.</p>
+            <img src="./chapter4/t3-5.png" alt="">
+            <h5><b>1:16 Demultiplexer</b></h5>
+            <p>The 1:16 Demux consists of 1 data input bit, 4 control bits and 16 output bits. are the sixteen output bits, S0, S1, S2 and S3 are the control bits and D is the input bit and Y0 to Y15, 16 outputs.</p>
+            <img src="./chapter4/t3-6.png" alt="">
+            <img src="./chapter4/t3-7.png" alt="">
+            <h4><b>Cascading of Demultiplexers</b></h4>
+            <p>Cascading refers to a process where large Demuxes can be designed and implemented using smaller Demuxes.</p>
+            <p>Example: 1:8 Demux can be designed using two 1:4 Demuxes as shown in figure  and similarly 1:16 Demuxes can be designed using two 1:8 Demultiplexers.</p>
+            <img src="./chapter4/t3-8.png" alt="">
+            <h4><b>Advantages of Demultiplexers</b></h4>
+            <p>Transmission of Audio/Video signals requires combination of Multiplexers and Demultiplexers.</p>
+            <p>They are also used as decoders in security systems like banking sectors.</p>
+            <p>Combination of Demuxes with Muxes y the efficiency of the communication system.</p>
+            <p>Disadvantages of Demultiplexers</p>
+            <p>Wastage of Bandwidth might occur.</p>
+            <p>Delays might occur due to synchronization of signals.</p>
+            <h4><b>Applications of De-Multiplexer</b></h4>
+            <p>De-Multiplexers are used to connect a single source to multiple destinations. These applications include the following:</p>
+            <p>Demultiplexers are used in clock data recovery solutions.</p>
+            <p>Demultiplexer along with multiplexer is necessary for any communication system for data transmission.</p>
+            <p>Demultiplexers are used in ATM packets broadcasting.</p>
+            <p>The output of Arithmetic Logic Unit is stored in respective registers using Demultiplexers.</p>
+            <p>They act as Serial to Parallel converter.</p>
+            <p>They are also used in Wavelength routers.</p>
+            <p><b>•	Communication System</b> <br>Mux and Demux both are used in communication system to carry out the process of data transmission. A De-multiplexer receives the output signals from the multiplexer and at the receiver end it converts them back to the original form.</p>
+            <p><b>•	Arithmetic Logic Unit</b> <br>The output of the ALU is fed as an input to the De-multiplexer, and the output of the Demultiplexer is connected to a multiple register. The output of the ALU can be stored in multiple registers.</p>
+            <p><b>•	Serial to Parallel Converter</b> <br>This converter is used to reconstruct parallel data. In this technique, serial data is given as an input to the De-multiplexer at a regular interval, and a counter is attached to the Demultiplexer at the control input to detect the data signal at the output of the Demultiplexer. When all data signals are stored, the output of the Demux can be read out in parallel.</p>
+
+          </div>
+
+
+             <!-- topic 4 -->
+
+           <div class="tab-pane" id="tab4">
+           <p>The encoders play an essential role in digital electronics.</p>
+           <p>Encoders & decoders are used to convert data from one form to another form. These are frequently used in communication system such as telecommunication, networking to transfer data from one end to the other end. Similarly, in the digital domain, for easy transmission of data, it is often encrypted or placed within codes, and then transmitted. </p>
+           <p>At the receiver, the coded data is decrypted or gathered from the code and is processed in order to be displayed or given to the load accordingly.</p>
+           <img src="./chapter4/t4-1.png" alt="">
+           <h4><b>Types of Encoders.</b></h4>
+           <p>An encoder is an electronic device used to convert an analogue signal to a digital signal such as a BCD code. ( Known to Unknown). It has a number of input lines, but only one of the inputs is activated at a given time and produces an N-bit output code that depends on the activated input.. The encoder allows 2N inputs and generates N-number of outputs. For example, in 4-2 encoder, if we give 4 inputs it produces only 2 outputs.</p>
+           <p>The encoders are designed with logic gate such as an OR-gate. There are different types of encoders like 4 , 8, and 16 encoders and the truth table of encoder depends upon a particular encoder chosen by the user.</p>
+           <img src="./chapter4/t4-2.png" alt="">
+           <h4><b>Priority Encoder</b></h4>
+           <p>A normal encoder has a number of input lines amongst which only one of which is activated at a given time while a priority encoder has more than one input, which is activated based on priority. Which means that, the priority encoders are used to control interrupt requests by acting according to the highest priority request? If two or more inputs are equal to one – at the same time, the input having the highest priority will be preferred to take. Internal hardware will check this condition and priority, which is set.</p>
+           <p>Here, decimal to BCD encoder is being explained along with the truth table. </p>
+           <p>A decimal to BCD encoder has 10 input lines 0 to 9 and 4 output lines Y0 to Y3 (Or-ABCD)</p>
+           <p>From the truth table, the outputs can be expressed by  following Boolean Function.</p>
+           <p>Note: Below Boolean functions are formed by ORing all the input lines for which output is 1. For instance Y0  is 1 for D1, D3, D5, D7 & D9 input lines.</p>
+           <p>Y0  = D = D1 + D3 + D5 + D7 + D9.    LSB</p>
+           <p>Y1 = C   = D2 + D3 + D6 + D7</p>
+           <p>Y2 = B   = D4 + D5 + D6 + D7</p>
+           <p>Y3 = A  = D8 + D9.                               MSB</p>
+           <p>The decimal to BCD encoder can therefore be implemented with OR gates whose inputs are determined directly from truth table as shown in the images.</p>
+           <p>Limitations With Decimal To BCD Encoder</p>
+           <p>A decimal to BCD encoder has limitations.</p>
+           <p>For 10 bits input, there can be 2^10 possible combinations, out of which only 10 are used using 4 output lines.</p>
+           <p>The discrepancy of 0 output due to all inputs being 0 or D0 being 0 is resolved by using additional input known as Enable</p>
+           <p>Only one input can be active at any given time.</p>
+           <img src="./chapter4/t4-3.png" alt="">
+           <img src="./chapter4/t4-5.png" alt="">
+           <img src="./chapter4/t4-6.png" alt="">
+           <p><b>One more priority encoder example:</b></p>
+           <img src="./chapter4/t4-7.png" alt="">
+
+          </div>
+
+
+           <!-- topic 5 -->
+
+           <div class="tab-pane" id="tab5">
+            <p>The decoder is an electronic device that is used to convert digital signal to an analogue signal(Unknown to Known). It allows single input line and produces multiple output lines.  The decoders are used in many communication projects that are used to communicate between two devices. The decoder allows N- inputs and generates 2N-numbers of outputs. For example, if we give 2 inputs that will produce 4 outputs by using 4 by 2 decoder.</p>
+            <p>The decoders are designed with logic gates such as AND and NOT gate. There are different types of decoders like 4, 8, and 16 decoders and the truth table of decoder depends upon a particular decoder chosen by the user</p>
+            <p><b>2-to-4 line Decoder (Extra)</b></p>
+            <p>In this type , decoders contain two inputs A0, A1, and four outputs represented by D0, D1, D2, and D3. As you can see in the truth table – for each input combination, one output line is activated.</p>
+            <img src="./chapter4/t5-1.png" alt="">
+            <p>1.	D0 =A1 A0, which corresponds to input 00</p>
+            <p>2.	D1 =A1 A0, which corresponds to input 01</p>
+            <p>3.	D2 =A1 A0, which corresponds to input 10</p>
+            <p>4.	D3 =A1 A0, which corresponds to input 11</p>
+            <p><b>( Complements are not marked in upper A1 and A0) </b></p>
+            <p>The circuit is implemented with AND gates, as shown in the figure. In this circuit, the logic equation for D0 is A1 A0, and so on. Thus, each output of the decoder will be generated to the input combination.</p>
+            <h4><b>7 Segment Display Decoder</b></h4>
+            <p>A Display Decoder/Driver is a combinational circuit which decodes  n-bit input value into a number of output lines and also drive a 7 Segment LED / LCD display.</p>
+            <p>A Digital Decoder IC, converts one digital format (BCD) into another(7 Segment) by Binary Coded Decimal (BCD) to 7-Segment Display Decoder.</p>
+            <p>This displays digital data in the form of numbers, letters or even alpha-numerical characters.</p>
+            <p>7 Segment Display consist of seven individual coloured LED’s (called the segments), within one single display package. In order to produce the required numbers or HEX characters from 0 to 9 and A to F respectively, on the display the correct combination of LED segments need to be illuminated. Decoders IC  74LS47 is used to do it. It is common cathode type display. Hence whichever cathode is connected to Low that segment only Glow. Remaining segments remain Off.</p>
+            <p>A standard 7-segment LED display generally has eight 10 input connections, one for each LED segment, thus 7 for 7 segments. 8th one acts as a common terminal for all the internal display segments.9th input pin is used to display a decimal point. 10th is useless.</p>
+            <p><b>Two types of 7-segment LED digital display are available.</b></p>
+            <p>•	1. The Common Cathode Display– All the cathodes of the LED’s are joined together to ground. The individual segments are illuminated by application of a Logic “1” signal to the individual Anode terminals.</p>
+            <p>•	2. The Common Anode Display – All the anodes are joined together to logic “1” and the individual segments are illuminated by connecting the individual Cathode terminals to a Low.</p>
+          <h5><b>7-Segment Display Format</b></h5>
+          <p>To display the number “5”  segments a, c, d, f and g would be illuminated. If we wanted to display a different number or letter then a different set of segments would need to be illuminated.</p>
+          <img src="./chapter4/t5-2.png" alt="">
+          <p>7-segment display truth table gives the idea of segments that need to be glow in order to produce different symbols.</p>
+          <img src="./chapter4/t5-3.png" alt="">
+          <p><b>Truth Table for a 7-segment display assuming common cathode display where Low means Glow and High means LED OFF.</b></p>
+          <!-- table here pending -->
+          <p>It can be seen that to display any single digit number from 0 to 9 in binary or letters from A to F in hexadecimal, we would require seven separate segment connections plus one additional connection for the LED’s “common” connection. </p>
+          <p>As the segments are light emitting diodes, the driving circuit for 1 LED glow would need to produce up to 30mA of current and to display the number “8”, all seven segments would need to be glow resulting a total current of nearly 210mA, (7 x 30mA).</p>
+          <p>Obviously, the use of so many connections and power consumption is impractical for some electronic or microprocessor based circuits and so in order to reduce the number of signal lines required to drive just one single display, display decoders such as the BCD to 7-Segment Display Decoder and Driver IC’s are used instead.</p>
+          <h4><b>Binary Coded Decimal</b></h4>
+          <p>Binary Coded Decimal (BCD or “8421” BCD) numbers are made up of group of 4 bits (a nibble).</p>
+          <p>BCD numbers only range from 0 to 9.</p>
+          <h4><b>BCD to 7-Segment Display Decoders</b></h4>
+          <p>In practice current limiting resistors of about 150Ω to 330Ω would be connected in series between the decoder/driver chip and each LED display segment to limit the maximum current flow. There are different display decoders and drivers available for the different types of available displays, either LED or LCD. For example, the 74LS48 for common-cathode LED types, the 74LS47 for common-anode LED types.</p>
+          <p>CMOS CD4543 is used for LCD types.</p>
+          <img src="./chapter4/t5-4.png" alt="">
+          <img src="./chapter4/t5-5.png" alt="">
+           </div>
+
+             <!-- topic 6 -->
+
+             <div class="tab-pane" id="tab6">
+             Questions list here
+            </div>
+
+
+
+           
+
+
+          </div>
+    </div>
+  </div>
+
+
+   
+
+
+
+<div class="footer">
+  <div class="copyright">Copyright © 2021 Design & Develop by 
+    <a href="http://sharjeel.epizy.com" class="sharjeelLink">Sharjeel Ak
+      </a></div>
+      </div>
+  </div>
+
+
+
+    <script type="text/javascript" src="../assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="../assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/retina.js"></script>
+    <script type="text/javascript" src="../assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sticky.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.inview.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="../assets/js/portfolio-main.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+   
+</body>
+</html> 
